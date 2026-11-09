@@ -465,7 +465,7 @@ export default function AdminDashboard({
           />
         </div>
 
-        <button className="logout-button" onClick={onLogout}>
+        <button className="admin-logout-button" onClick={onLogout}>
           Keluar
         </button>
       </header>

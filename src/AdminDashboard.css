@@ -33,27 +33,31 @@
 .admin-brand {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
 }
 
 .admin-brand img {
   width: 260px;
   height: 72px;
+  flex: 0 0 auto;
   object-fit: contain;
   object-position: left center;
 }
 
-.logout-button {
+.admin-logout-button {
   background: white;
   color: #064e3b;
   border: none;
   border-radius: 8px;
   padding: 12px 22px;
+  width: auto;
+  flex: 0 0 auto;
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
 }
 
-.logout-button:hover {
+.admin-logout-button:hover {
   background: #e8f5ee;
 }
 
@@ -623,7 +627,9 @@
     height: 52px;
   }
 
-  .logout-button {
+  .admin-logout-button {
+    width: auto;
+    flex: 0 0 auto;
     padding: 10px 14px;
     font-size: 13px;
   }
