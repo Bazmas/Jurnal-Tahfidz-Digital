@@ -126,7 +126,7 @@ function BerandaPengajar() {
       {/* BANNER SAMBUTAN */}
       <section className="pengajar-welcome">
         <div className="welcome-content">
-          <span className="welcome-label">ASSALAMU'ALAIKUM WARAHMATULLAH</span>
+          <span className="welcome-label">ASSALAMU'ALAIKUM WARAHMATULLAHI WABARAKATUH</span>
           <img
   src="/images/foto-ustadz-dummy.png"
   alt="Ustadz Imam"
