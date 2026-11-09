@@ -1,0 +1,1104 @@
+
+/* =====================================
+   JURNAL TAHFIDZ DIGITAL
+   SANTRI DASHBOARD
+   DESAIN MENGIKUTI ADMIN DASHBOARD
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.santri-dashboard {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  background: #f5f8f6;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* HEADER */
+
+.santri-header {
+  width: 100%;
+  min-height: 100px;
+  background: #064e3b;
+  color: #ffffff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.santri-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.santri-header-brand img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  padding: 6px;
+  background: #ffffff;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.santri-header-brand span {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #d1fae5;
+}
+
+.santri-header-brand h2 {
+  margin: 5px 0 0;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.santri-header button {
+  background: #ffffff;
+  color: #064e3b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* KONTEN */
+
+.santri-dashboard > section,
+.santri-dashboard > footer {
+  width: calc(100% - 90px);
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SAMBUTAN SANTRI */
+
+.santri-welcome {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  padding: 28px;
+  background: #e8f4ed;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.santri-welcome img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5eee8;
+  flex-shrink: 0;
+}
+
+.santri-welcome p {
+  margin: 0 0 7px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.santri-welcome h1 {
+  margin: 0 0 7px;
+  color: #064e3b;
+  font-size: 27px;
+}
+
+.santri-welcome span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* JUDUL BAGIAN */
+
+.santri-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.santri-section-heading > span {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 12px;
+  background: #c3e4ce;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.santri-section-heading h2 {
+  margin: 0;
+  color: #064e3b;
+  font-size: 21px;
+}
+
+/* KARTU UMUM */
+
+.santri-profil,
+.santri-target,
+.santri-hafalan,
+.santri-dashboard > section[style] {
+  padding: 28px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.santri-profil {
+  background: #e8f4ed;
+}
+
+.santri-target {
+  background: #e8f4ed;
+}
+
+.santri-hafalan {
+  background: #e8f4ed;
+}
+
+/* PROFIL SANTRI */
+
+.santri-profil-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+}
+
+.santri-profil-list p {
+  margin: 0;
+  padding: 15px 17px;
+  background: #ffffff;
+  border: 1px solid #dce9e0;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.santri-profil-list p span {
+  display: block;
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.santri-profil-list p strong {
+  display: block;
+  color: #24352c;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+/* RANGKUMAN */
+
+.santri-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.summary-card {
+  min-width: 0;
+  min-height: 155px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* WARNA KARTU RANGKUMAN */
+
+.summary-green {
+  background: #e0f1e6;
+  border-left: 5px solid #16834a;
+}
+
+.summary-blue {
+  background: #e0f1e6;
+  border-left: 5px solid #16834a;
+}
+
+.summary-orange {
+  background: #e0f1e6;
+  border-left: 5px solid #16834a;
+}
+
+/* KOTAK IKON RANGKUMAN */
+
+.summary-icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 14px;
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.summary-green .summary-icon {
+  background: #c3e4ce;
+}
+
+.summary-blue .summary-icon {
+  background: #c3e4ce;
+}
+
+.summary-orange .summary-icon {
+  background: #c3e4ce;
+}
+
+.summary-card > strong {
+  display: block;
+  font-size: 34px;
+  margin-bottom: 7px;
+}
+
+.summary-card h3 {
+  margin: 0 0 7px;
+  font-size: 17px;
+}
+
+.summary-card .summary-label-chip {
+  width: fit-content;
+  max-width: 100%;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.summary-card .summary-label-chip::selection {
+  background: #ffffff;
+  color: inherit;
+}
+
+.summary-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.summary-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.summary-copy p {
+  padding-left: 12px;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.santri-dashboard .summary-copy .summary-duration {
+  padding-left: 12px;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.summary-green > strong,
+.summary-green h3 {
+  color: #064e3b;
+}
+
+.summary-blue > strong,
+.summary-blue h3 {
+  color: #064e3b;
+}
+
+.summary-orange > strong,
+.summary-orange h3 {
+  color: #064e3b;
+}
+
+/* KELOMPOK DAN PROGRES */
+
+.santri-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.santri-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+}
+
+.santri-detail-left .summary-card {
+  flex: 1;
+}
+
+.santri-schedule-card,
+.santri-progress-card {
+  min-width: 0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.santri-schedule-card {
+  background: #e8f4ed;
+  border-left: 5px solid #16834a;
+}
+
+.santri-progress-card {
+  background: #e8f4ed;
+  border-left: 5px solid #16834a;
+}
+
+/* IKON JADWAL DAN PROGRES */
+
+.schedule-title,
+.progress-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.schedule-title span,
+.progress-heading span {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.schedule-title span {
+  background: #c3e4ce;
+}
+
+.progress-heading span {
+  background: #c3e4ce;
+}
+
+.schedule-title h3,
+.progress-heading h3 {
+  margin: 0;
+  color: #064e3b;
+  font-size: 19px;
+}
+
+.santri-schedule-card > strong {
+  display: block;
+  width: fit-content;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #24352c;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.schedule-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.schedule-days span {
+  padding: 8px 13px;
+  background: #e8f4ed;
+  color: #064e3b;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* PROGRES */
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.progress-item--juz30 {
+  background: #ffffff;
+}
+
+.progress-item--all-juz {
+  background: #ffffff;
+}
+
+.progress-item > span {
+  color: #374151;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.progress-item > strong {
+  color: #064e3b;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.progress-item--all-juz > strong {
+  color: #064e3b;
+}
+
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16834a;
+  border-radius: 20px;
+}
+
+.progress-item--all-juz .progress-fill {
+  background: #087a55;
+}
+
+.progress-item small {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.progress-divider {
+  height: 1px;
+  background: #dce9e0;
+  margin: 12px 0;
+}
+
+/* TARGET HAFALAN */
+
+.santri-target > h3 {
+  color: #064e3b;
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+
+.santri-target > p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 15px;
+}
+
+.santri-target > div[style] {
+  border: 1px solid #e5eee8;
+}
+
+/* RIWAYAT HAFALAN */
+
+.santri-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin: -8px 0 18px;
+}
+
+.santri-daftar-surah {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.santri-surah {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 18px;
+  background: #ffffff;
+  border: 1px solid #dce9e0;
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.santri-nomor {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #e8f4ed;
+  color: #064e3b;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.santri-info-surah {
+  flex: 1;
+  min-width: 0;
+}
+
+.santri-info-surah strong {
+  display: block;
+  color: #24352c;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.santri-info-surah span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.santri-status {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  background: #d5eadc;
+  color: #064e3b;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* SERTIFIKAT */
+
+.santri-dashboard > section[style] {
+  margin-top: 22px !important;
+  margin-bottom: 22px !important;
+}
+
+.santri-dashboard > section[style] > div:last-child > div {
+  min-width: 0;
+}
+
+/* FOOTER */
+
+.santri-footer {
+  padding: 25px 0;
+  color: #6b7280;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1000px) {
+  .santri-dashboard > section,
+  .santri-dashboard > footer {
+    width: calc(100% - 50px);
+  }
+
+  .santri-detail-grid {
+    gap: 16px;
+  }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 650px) {
+  .santri-header {
+    min-height: 80px;
+    padding: 12px 17px;
+  }
+
+  .santri-header-brand {
+    gap: 9px;
+  }
+
+  .santri-header-brand img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .santri-header-brand span {
+    font-size: 10px;
+  }
+
+  .santri-header-brand h2 {
+    font-size: 18px;
+  }
+
+  .santri-header button {
+    padding: 10px 14px;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .santri-dashboard > section,
+  .santri-dashboard > footer {
+    width: calc(100% - 34px);
+  }
+
+  .santri-welcome {
+    margin-top: 22px;
+    padding: 19px;
+    gap: 14px;
+  }
+
+  .santri-welcome img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .santri-welcome h1 {
+    font-size: 20px;
+  }
+
+  .santri-welcome p {
+    font-size: 13px;
+  }
+
+  .santri-welcome span {
+    font-size: 12px;
+  }
+
+  .santri-profil,
+  .santri-target,
+  .santri-hafalan,
+  .santri-dashboard > section[style] {
+    padding: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .santri-section-heading {
+    gap: 9px;
+    margin-bottom: 17px;
+  }
+
+  .santri-section-heading > span {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 9px;
+    font-size: 18px;
+  }
+
+  .santri-section-heading h2 {
+    font-size: 18px;
+  }
+
+  .santri-profil-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .santri-profil-list p {
+    padding: 13px 14px;
+  }
+
+  .santri-summary-grid {
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .summary-card {
+    min-height: 135px;
+    padding: 16px;
+  }
+
+  .santri-summary-grid .summary-card {
+    display: grid;
+    grid-template-columns: 40px auto minmax(0, 1fr) 22px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 5px;
+    min-height: 64px;
+    padding: 8px;
+    border-left: 0;
+    border-radius: 12px;
+  }
+
+  .santri-summary-grid .summary-icon {
+    grid-column: 1;
+    grid-row: 1;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  .santri-summary-grid .summary-card > strong {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .santri-summary-grid .summary-card h3 {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.15;
+  }
+
+  .santri-summary-grid .summary-card p {
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 9px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .santri-summary-grid .summary-target {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .santri-summary-grid .summary-target .summary-copy {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+  }
+
+  .santri-summary-grid .summary-target .summary-copy h3,
+  .santri-summary-grid .summary-target .summary-copy p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .santri-summary-grid .summary-green .summary-copy {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .summary-card > strong {
+    font-size: 29px;
+  }
+
+  .summary-card h3 {
+    font-size: 14px;
+  }
+
+  .summary-card p {
+    font-size: 12px;
+  }
+
+  .santri-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .santri-detail-left {
+    gap: 15px;
+  }
+
+  .santri-detail-left .summary-card {
+    display: grid;
+    grid-template-columns: 44px auto minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+    min-height: 64px;
+    padding: 8px;
+    border-left: 0;
+    border-radius: 12px;
+  }
+
+  .santri-detail-left .summary-icon {
+    grid-column: 1;
+    grid-row: 1;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .santri-detail-left .summary-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .santri-detail-left .summary-card .summary-copy {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    align-items: flex-start;
+    gap: 1px;
+    min-width: 0;
+  }
+
+  .santri-detail-left .summary-card .summary-copy h3,
+  .santri-detail-left .summary-card .summary-copy p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .santri-detail-left .summary-card h3.summary-label-chip {
+    font-size: 18px;
+  }
+
+  .santri-detail-left .summary-card p {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .santri-schedule-card,
+  .santri-progress-card {
+    padding: 19px;
+  }
+
+  .schedule-title h3,
+  .progress-heading h3 {
+    font-size: 17px;
+  }
+
+  .schedule-title span,
+  .progress-heading span {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 9px;
+    font-size: 18px;
+  }
+
+  .santri-schedule-card > strong {
+    font-size: 18px;
+  }
+
+  .progress-item > strong {
+    font-size: 27px;
+  }
+
+  .progress-item {
+    gap: 7px;
+    padding: 11px;
+  }
+
+  .santri-surah {
+    padding: 13px;
+    gap: 10px;
+  }
+
+  .santri-nomor {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .santri-info-surah strong {
+    font-size: 14px;
+  }
+
+  .santri-status {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .santri-target > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .santri-header-brand img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .santri-header-brand span {
+    font-size: 9px;
+  }
+
+  .santri-header-brand h2 {
+    font-size: 16px;
+  }
+
+  .santri-header button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .santri-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 651px) {
+  .santri-dashboard .summary-copy {
+    gap: 6px;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-copy > p {
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 116px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card.summary-green {
+    background: #e0f1e6;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card.summary-blue {
+    background: #e0f1e6;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card .summary-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    margin: 0;
+    border-radius: 14px;
+    font-size: 34px;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card > strong {
+    display: block;
+    margin: 0;
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card.summary-green .summary-icon {
+    background: #c3e4ce;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card.summary-blue .summary-icon {
+    background: #c3e4ce;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    background: #e0f1e6;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-card .summary-icon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    margin: 0;
+    border-radius: 14px;
+    font-size: 34px;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-card h3 {
+    margin: 0;
+    color: #064e3b;
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+  }
+
+  .santri-dashboard .santri-detail-left .summary-card .summary-icon {
+    background: #c3e4ce;
+  }
+
+  .santri-dashboard .santri-summary-grid .summary-card .summary-icon,
+  .santri-dashboard .santri-detail-left .summary-card .summary-icon,
+  .santri-dashboard .schedule-title > span,
+  .santri-dashboard .progress-heading > span {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    flex: 0 0 56px;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    background: #c3e4ce;
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+.santri-dashboard .schedule-title > span,
+.santri-dashboard .progress-heading > span {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.santri-dashboard .summary-card .summary-icon,
+.santri-dashboard .schedule-title > span,
+.santri-dashboard .progress-heading > span {
+  background-color: #c3e4ce;
+}

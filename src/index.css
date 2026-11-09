@@ -1,0 +1,92 @@
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #26352e;
+  background: #f5f8f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --hijau-utama: #064e3b;
+  --hijau-gelap: #043c2e;
+  --hijau: #087a55;
+  --hijau-muda: #e8f5ee;
+  --emas: #c5a45b;
+  --putih: #ffffff;
+  --latar: #f5f8f6;
+  --teks: #26352e;
+  --teks-redup: #718078;
+  --garis: #e4ebe6;
+  --radius: 12px;
+  --bayangan: 0 4px 18px rgba(6, 78, 59, 0.06);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+  background: var(--latar);
+  color: var(--teks);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+::selection {
+  background: #c5e6d4;
+  color: #064e3b;
+}

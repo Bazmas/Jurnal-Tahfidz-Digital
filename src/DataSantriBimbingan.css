@@ -1,0 +1,321 @@
+
+/* =====================================
+   DATA SANTRI BIMBINGAN
+   JURNAL TAHFIDZ DIGITAL
+===================================== */
+
+.data-santri-page {
+  width: 100%;
+  color: #243b32;
+}
+
+/* HEADING */
+
+.data-santri-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.data-santri-heading h2 {
+  margin: 0 0 7px;
+  color: #173f32;
+  font-size: 23px;
+  font-weight: 750;
+}
+
+.data-santri-heading p {
+  margin: 0;
+  color: #82918a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.jumlah-santri-badge {
+  min-width: 72px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e9f5ee;
+  border-radius: 12px;
+}
+
+.jumlah-santri-badge span {
+  color: #18734f;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.jumlah-santri-badge small {
+  color: #638273;
+  font-size: 11px;
+}
+
+/* INFO KELOMPOK */
+
+.data-santri-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 19px;
+  margin-bottom: 22px;
+  background: #edf7f0;
+  border: 1px solid #dceee1;
+  border-radius: 13px;
+}
+
+.data-santri-info-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #19744f;
+  background: #d9eddf;
+  border-radius: 11px;
+  font-size: 25px;
+}
+
+.data-santri-info strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #22543e;
+  font-size: 13px;
+}
+
+.data-santri-info p {
+  margin: 0;
+  color: #71877b;
+  font-size: 12px;
+}
+
+/* DAFTAR SANTRI */
+
+.data-santri-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* CARD */
+
+.data-santri-card {
+  min-width: 0;
+  padding: 19px;
+  background: #ffffff;
+  border: 1px solid #e8eee9;
+  border-radius: 15px;
+  box-shadow: 0 3px 13px rgba(27, 68, 48, 0.045);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-santri-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(27, 68, 48, 0.09);
+}
+
+/* IDENTITAS */
+
+.data-santri-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.data-santri-avatar {
+  width: 49px;
+  height: 49px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #287c57, #15543a);
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.data-santri-identity {
+  min-width: 0;
+  flex: 1;
+}
+
+.data-santri-identity h3 {
+  margin: 0 0 5px;
+  color: #254638;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.data-santri-identity p {
+  margin: 0;
+  color: #8a9991;
+  font-size: 11px;
+}
+
+.santri-status {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  color: #16804f;
+  background: #e7f6ed;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* DETAIL HAFALAN */
+
+.data-santri-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 13px 0;
+  border-top: 1px solid #edf1ee;
+  border-bottom: 1px solid #edf1ee;
+}
+
+.data-santri-details div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.data-santri-details span {
+  color: #99a49e;
+  font-size: 10px;
+}
+
+.data-santri-details strong {
+  overflow-wrap: anywhere;
+  color: #365b48;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* PROGRES */
+
+.data-santri-progress {
+  margin: 16px 0;
+}
+
+.data-santri-progress-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.data-santri-progress-label span {
+  color: #819188;
+  font-size: 11px;
+}
+
+.data-santri-progress-label strong {
+  color: #21774f;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.data-santri-progress-track {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  background: #edf2ee;
+  border-radius: 20px;
+}
+
+.data-santri-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #32966a, #176342);
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+/* TOMBOL DETAIL */
+
+.btn-detail-santri {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #176b48;
+  background: #edf7f0;
+  border: 1px solid #dceee2;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-detail-santri:hover {
+  color: #ffffff;
+  background: #176b48;
+  border-color: #176b48;
+}
+
+.btn-detail-santri span {
+  font-size: 16px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .data-santri-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .data-santri-heading {
+    margin-bottom: 19px;
+  }
+
+  .data-santri-heading h2 {
+    font-size: 19px;
+  }
+
+  .data-santri-heading p {
+    font-size: 11px;
+  }
+
+  .jumlah-santri-badge {
+    min-width: 62px;
+    padding: 8px 11px;
+  }
+
+  .data-santri-info {
+    padding: 14px;
+    margin-bottom: 17px;
+  }
+
+  .data-santri-card {
+    padding: 16px;
+  }
+
+  .data-santri-card-top {
+    gap: 10px;
+  }
+
+  .data-santri-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+  }
+
+  .data-santri-identity h3 {
+    font-size: 13px;
+  }
+}
