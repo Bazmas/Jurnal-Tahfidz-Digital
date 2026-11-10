@@ -19,9 +19,12 @@ or **Add to Home screen**. The app uses the existing Tahfidz logo for its
 standard and maskable icons; replace the corresponding files in
 `public/images/` if the branding changes.
 
-The service worker precaches the app shell and the listed branding assets. It
-does not cache API, authentication, or journal responses. When an update is
-available, the app asks before activating it and reloading the page.
+The production JavaScript and CSS target Chrome 70 or newer for compatibility
+with older Android browsers. The service worker precaches the app shell and
+branding assets, and caches same-origin images for up to 30 days so they remain
+available when offline. It does not cache API, authentication, or journal
+responses. Outdated precache revisions are cleaned up, and the app asks before
+activating an update and reloading the page.
 
 ## Expanding the Oxlint configuration
 

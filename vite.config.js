@@ -4,6 +4,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    target: 'chrome70',
+  },
   plugins: [
     react(),
     VitePWA({
@@ -24,6 +27,7 @@ export default defineConfig({
         orientation: 'portrait',
         theme_color: '#064e3b',
         background_color: '#f5f8f6',
+        lang: 'id',
         start_url: '/',
         scope: '/',
         icons: [
@@ -57,6 +61,25 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html}'],
         navigateFallbackDenylist: [/^\/api(?:\/|$)/, /^\/auth(?:\/|$)/],
         cleanupOutdatedCaches: true,
+        runtimeCaching: [
+          {
+            urlPattern: ({ request, url }) =>
+              request.destination === 'image' &&
+              url.origin === self.location.origin,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'jurnal-tahfidz-images',
+              networkTimeoutSeconds: 3,
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 30 * 24 * 60 * 60,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ],
       },
     }),
   ],
